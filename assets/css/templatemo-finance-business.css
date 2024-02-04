@@ -21,12 +21,18 @@ ul {
 	margin: 0;
 	list-style: none;
 }
+button{
+	border: none;
+}
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
-a.filled-button {
+.hide-element{
+	display: none!important;
+}
+.filled-button {
 	background-color: #a4c639;
 	color: #fff;
 	font-size: 13px;
@@ -38,7 +44,7 @@ a.filled-button {
 	transition: all 0.3s;
 }
 
-a.filled-button:hover {
+.filled-button:hover {
 	background-color: #fff;
 	color: #a4c639;
 }
@@ -567,8 +573,52 @@ ul.slick-dots {
 .service-item .down-content p {
 	margin-bottom: 20px;
 }
+/* Events section */
+.events{
+	margin-top: 140px;	
+}
+.events .container{
+	background-color: #f7f7f7;
+}
+.events-content {
+	padding: 45px 45px 45px 30px;
+	
+}
 
 
+.events-content h2 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.events-content h4{
+	margin-bottom: 30px;
+}
+.events-content em {
+	font-style: normal;
+	color: #a4c639;
+}
+
+.events-content p {
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.events .right-image-mob img{
+	width: 100%;
+	overflow: hidden;
+}
+.events .right-image{
+	width: 100%;
+}
+.events .right-image-mob{
+	width: 0%;
+}
+
+.events .right-image img {
+	width: 100%;
+	overflow: hidden;
+}
 
 /* Fun Facts */
 
@@ -1223,6 +1273,13 @@ footer .contact-form button.filled-button:hover {
 
 /* Responsive Style */
 @media (max-width: 768px) {
+	/* Events section photos */
+	.events .right-image{
+		width: 0px;
+	}
+	.events .right-image-mob{
+		width: 100%;
+	}
 	.sub-header {
 		display: none;
 	}
