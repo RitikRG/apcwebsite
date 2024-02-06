@@ -29,6 +29,23 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #fff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #a4c639;
+	border-radius: 5px;
+  }
+
 .hide-element{
 	display: none!important;
 }
@@ -1131,15 +1148,22 @@ footer .contact-form button.filled-button:hover {
 	padding: 120px 0px;
 	margin-bottom:140px ;
 }
+.team-item{
+	text-align: center;
+	background-color: #fff;
+	padding: 10px;
+	padding-top: 20px;
+	border-radius: 5px;
+}
 
 .team-item img {
-	width: 100%;
 	overflow: hidden;
+	border-radius: 5px;
 }
 
 .team-item .down-content {
-	background-color: #fff;
 	padding: 30px;
+	text-align: justify;
 }
 
 .team-item .down-content h4 {
@@ -1279,6 +1303,12 @@ footer .contact-form button.filled-button:hover {
 	}
 	.events .right-image-mob{
 		width: 100%;
+	}
+	.events-content h2{
+		font-size: 24px;
+	}
+	.events-content h4{
+		font-size: 20px;
 	}
 	.sub-header {
 		display: none;
